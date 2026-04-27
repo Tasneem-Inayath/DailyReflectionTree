@@ -54,7 +54,7 @@ DailyReflectionTree/
 
 (Add your flowchart image here)
 
-![Flowchart](tree/flowchart.png)
+![Flowchart](tree/Flowchart.png)
 
 ---
 
