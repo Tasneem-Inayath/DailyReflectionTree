@@ -54,7 +54,7 @@ DailyReflectionTree/
 
 (Add your flowchart image here)
 
-![Flowchart](tree/tree-diagram.png)
+![Flowchart](tree/flowchart.png)
 
 ---
 
@@ -62,7 +62,7 @@ DailyReflectionTree/
 
 (Add screenshot here)
 
-![App Screenshot](assets/app-home.png)
+![App Screenshot](assets/homepage.png)
 
 ---
 
