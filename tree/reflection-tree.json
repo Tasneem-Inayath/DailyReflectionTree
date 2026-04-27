@@ -1,0 +1,299 @@
+[
+  {
+    "id": "START",
+    "type": "start",
+    "text": "Good evening. Let’s take a calm look at your day.",
+    "next": "Q1"
+  },
+  {
+    "id": "Q1",
+    "type": "question",
+    "text": "How would you describe today overall?",
+    "options": {
+      "Steady": "Q2_POS",
+      "Mixed": "Q2_MID",
+      "Heavy": "Q2_LOW",
+      "Draining": "Q2_LOW"
+    }
+  },
+  {
+    "id": "Q2_POS",
+    "type": "question",
+    "text": "What helped today move forward most?",
+    "options": {
+      "My planning": "Q3_POS",
+      "My reactions": "Q3_POS",
+      "Team support": "Q3_POS",
+      "Good timing": "Q3_POS"
+    }
+  },
+  {
+    "id": "Q2_MID",
+    "type": "question",
+    "text": "What made today feel mixed?",
+    "options": {
+      "Some progress, some delays": "Q3_MID",
+      "Low energy but good work": "Q3_MID",
+      "Too many shifts": "Q3_MID",
+      "Unclear priorities": "Q3_MID"
+    }
+  },
+  {
+    "id": "Q2_LOW",
+    "type": "question",
+    "text": "What weighed on you most today?",
+    "options": {
+      "Too many demands": "Q3_LOW",
+      "Feeling unsupported": "Q3_LOW",
+      "My own doubts": "Q3_LOW",
+      "Unexpected setbacks": "Q3_LOW"
+    }
+  },
+  {
+    "id": "Q3_POS",
+    "type": "question",
+    "text": "When a challenge appeared, what did you do first?",
+    "options": {
+      "Adjusted quickly": "Q4_POS",
+      "Stayed calm": "Q4_POS",
+      "Asked for help early": "Q4_POS",
+      "Focused on next step": "Q4_POS"
+    }
+  },
+  {
+    "id": "Q3_MID",
+    "type": "question",
+    "text": "When momentum dropped, what happened next?",
+    "options": {
+      "I reset and continued": "Q4_MID",
+      "I got distracted": "Q4_MID",
+      "I waited too long": "Q4_MID",
+      "I asked for clarity": "Q4_MID"
+    }
+  },
+  {
+    "id": "Q3_LOW",
+    "type": "question",
+    "text": "When things became difficult, what did you do first?",
+    "options": {
+      "Focused on what I could control": "Q4_LOW",
+      "Asked for support": "Q4_LOW",
+      "Waited for things to change": "Q4_LOW",
+      "Felt stuck": "Q4_LOW"
+    }
+  },
+  {
+    "id": "Q4_POS",
+    "type": "question",
+    "text": "How did you handle pressure today?",
+    "options": {
+      "Stayed steady": "R1_POS",
+      "Adapted as needed": "R1_POS",
+      "Stayed optimistic": "R1_POS",
+      "Worked calmly": "R1_POS"
+    }
+  },
+  {
+    "id": "Q4_MID",
+    "type": "question",
+    "text": "How did you handle pressure today?",
+    "options": {
+      "Tried my best": "R1_MID",
+      "Managed unevenly": "R1_MID",
+      "Lost focus sometimes": "R1_MID",
+      "Recovered later": "R1_MID"
+    }
+  },
+  {
+    "id": "Q4_LOW",
+    "type": "question",
+    "text": "How did you handle pressure today?",
+    "options": {
+      "Became frustrated": "R1_LOW",
+      "Lost energy": "R1_LOW",
+      "Shut down mentally": "R1_LOW",
+      "Barely managed": "R1_LOW"
+    }
+  },
+  {
+    "id": "R1_POS",
+    "type": "reflection",
+    "text": "You showed steadiness and agency today. Progress often comes from calm repeated choices.",
+    "next": "B1"
+  },
+  {
+    "id": "R1_MID",
+    "type": "reflection",
+    "text": "Mixed days often hold hidden progress. Even imperfect momentum still counts.",
+    "next": "B1"
+  },
+  {
+    "id": "R1_LOW",
+    "type": "reflection",
+    "text": "Hard days can hide your choices from view. Even small actions still shape tomorrow.",
+    "next": "B1"
+  },
+  {
+    "id": "B1",
+    "type": "bridge",
+    "text": "Now let’s shift from how the day felt to what you gave today.",
+    "next": "Q5"
+  },
+  {
+    "id": "Q5",
+    "type": "question",
+    "text": "Where did most of your effort go today?",
+    "options": {
+      "Helping others": "Q6_GIVE",
+      "Completing my tasks": "Q6_GIVE",
+      "Solving urgent issues": "Q6_GIVE",
+      "Wanting appreciation": "Q6_NEED"
+    }
+  },
+  {
+    "id": "Q6_GIVE",
+    "type": "question",
+    "text": "Did you support someone without being asked?",
+    "options": {
+      "Yes, gladly": "Q7_GIVE",
+      "Yes, briefly": "Q7_GIVE",
+      "No opportunity came": "Q7_GIVE",
+      "Only if needed": "Q7_GIVE"
+    }
+  },
+  {
+    "id": "Q6_NEED",
+    "type": "question",
+    "text": "What mattered most when effort felt unseen?",
+    "options": {
+      "Recognition": "Q7_NEED",
+      "Validation": "Q7_NEED",
+      "Fairness": "Q7_NEED",
+      "Comparison with others": "Q7_NEED"
+    }
+  },
+  {
+    "id": "Q7_GIVE",
+    "type": "question",
+    "text": "If your work went unnoticed, how did you respond?",
+    "options": {
+      "Kept contributing": "R2_GIVE",
+      "Stayed focused": "R2_GIVE",
+      "Moved on quietly": "R2_GIVE",
+      "Still helped others": "R2_GIVE"
+    }
+  },
+  {
+    "id": "Q7_NEED",
+    "type": "question",
+    "text": "How did you respond when appreciation was missing?",
+    "options": {
+      "Felt discouraged": "R2_NEED",
+      "Wanted recognition": "R2_NEED",
+      "Compared myself": "R2_NEED",
+      "Lost motivation": "R2_NEED"
+    }
+  },
+  {
+    "id": "R2_GIVE",
+    "type": "reflection",
+    "text": "Your effort leaned toward contribution. Quiet consistency often creates lasting trust.",
+    "next": "B2"
+  },
+  {
+    "id": "R2_NEED",
+    "type": "reflection",
+    "text": "Wanting appreciation is human. Confidence grows strongest when contribution leads the way.",
+    "next": "B2"
+  },
+  {
+    "id": "B2",
+    "type": "bridge",
+    "text": "One final angle: beyond yourself, who was included in your thinking today?",
+    "next": "Q8"
+  },
+  {
+    "id": "Q8",
+    "type": "question",
+    "text": "During today’s biggest challenge, who came to mind most?",
+    "options": {
+      "Mainly me": "Q9_SELF",
+      "My team": "Q9_WIDE",
+      "Someone struggling more than me": "Q9_WIDE",
+      "Customer / people affected": "Q9_WIDE"
+    }
+  },
+  {
+    "id": "Q9_SELF",
+    "type": "question",
+    "text": "What best describes that focus?",
+    "options": {
+      "I was trying to cope": "Q10_SELF",
+      "I felt alone in it": "Q10_SELF",
+      "My stress felt biggest": "Q10_SELF",
+      "I could only see my side": "Q10_SELF"
+    }
+  },
+  {
+    "id": "Q9_WIDE",
+    "type": "question",
+    "text": "What made others come to mind?",
+    "options": {
+      "Shared responsibility": "Q10_WIDE",
+      "I care about the team": "Q10_WIDE",
+      "Others had it harder": "Q10_WIDE",
+      "The outcome affects many": "Q10_WIDE"
+    }
+  },
+  {
+    "id": "Q10_SELF",
+    "type": "question",
+    "text": "When others succeeded today, what did you feel?",
+    "options": {
+      "Neutral": "R3_SELF",
+      "Jealous": "R3_SELF",
+      "Disconnected": "R3_SELF",
+      "Too stressed to notice": "R3_SELF"
+    }
+  },
+  {
+    "id": "Q10_WIDE",
+    "type": "question",
+    "text": "When others succeeded today, what did you feel?",
+    "options": {
+      "Happy for them": "R3_WIDE",
+      "Motivated to improve": "R3_WIDE",
+      "Proud of the team": "R3_WIDE",
+      "Inspired": "R3_WIDE"
+    }
+  },
+  {
+    "id": "R3_SELF",
+    "type": "reflection",
+    "text": "Stress can shrink our view to survival mode. Expanding attention outward often reduces pressure.",
+    "next": "SUMMARY_LOW"
+  },
+  {
+    "id": "R3_WIDE",
+    "type": "reflection",
+    "text": "You included others in your thinking today. Wider perspective often creates stronger meaning.",
+    "next": "SUMMARY_HIGH"
+  },
+  {
+    "id": "SUMMARY_LOW",
+    "type": "summary",
+    "text": "Today may have felt heavy. Even so, awareness is a strong first step. Tomorrow offers new choices.",
+    "next": "END"
+  },
+  {
+    "id": "SUMMARY_HIGH",
+    "type": "summary",
+    "text": "Today reflected ownership, contribution, and perspective. Keep building through steady choices.",
+    "next": "END"
+  },
+  {
+    "id": "END",
+    "type": "end",
+    "text": "See you tomorrow."
+  }
+]
